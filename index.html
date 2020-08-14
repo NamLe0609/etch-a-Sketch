@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Etch-a-sketch</title>
+    </head>
+    <body>
+        <style>
+            #container {
+                height: 600px;
+                width: 600px;
+                background-color: white;
+                position: relative;
+                top: 200px;
+                margin: auto;
+                display: flex;
+                flex-flow: row wrap;
+                border: solid black 1px;
+            }
+
+            .button {
+                border: solid black 1px;
+                padding: 32px;
+                margin: 5px;
+                color: black;
+            }
+
+            #grid-button {
+                background-color: #55ff55;
+            }
+
+            #clear-button {
+                background-color: #ff5555;
+            }
+
+            #random-color-button {
+                background-color: #5555ff;
+            }
+
+            #button-container {
+                display: flex;
+                width: auto;
+                margin: auto;
+                position: relative;
+                top: 150px;
+                justify-content: center;
+            }
+
+            body {
+                background-color: #ccccff;
+            }
+        </style>
+        <div id="button-container">
+            <button type="button" id="grid-button" class="button">
+                Create an x by x sized grid
+            </button>
+            <button type="button" id="clear-button" class="button">
+                Clear
+            </button>
+            <button type="button" id="random-color-button" class="button">
+                Use random colors
+            </button>
+        </div>
+        <div id="container"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
